@@ -70,9 +70,9 @@ namespace _06_RepositoryPattern_Repository
         }
 
         //Helper method
-        private StreamingContent GetContentByTitle(string title)
+        public StreamingContent GetContentByTitle(string title)
         {
-            foreach(StreamingContent content in -_ListOfContent)
+            foreach(StreamingContent content in _ListOfContent)
             {
                 if(content.Title == title)
                 {
