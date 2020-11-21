@@ -74,7 +74,7 @@ namespace _06_RepositoryPattern_Repository
         {
             foreach(StreamingContent content in _ListOfContent)
             {
-                if(content.Title == title)
+                if(content.Title.ToLower() == title.ToLower())
                 {
                     return content;
                 }
